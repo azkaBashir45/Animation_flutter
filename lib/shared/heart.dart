@@ -6,9 +6,9 @@ class Heart extends StatefulWidget {
 }
 
 class _HeartState extends State<Heart> with SingleTickerProviderStateMixin {
+  AnimationController? _controller;
+  Animation? _colorAnimation;
   bool isFav = false;
-  late AnimationController _controller;
-  late Animation _colorAnimation;
 
   @override
   void initState() {
