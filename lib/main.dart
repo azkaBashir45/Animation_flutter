@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:animation/screens/home.dart';
-import 'package:animation/screens/sandbox.dart';
+import 'package:animation/screens/home.dart';
+// import 'package:animation/screens/sandbox.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ninja Trips',
-      home: Sandbox(),
+      home: Home(),
     );
   }
 }
