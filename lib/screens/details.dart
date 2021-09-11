@@ -21,11 +21,14 @@ class Details extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               ClipRRect(
-                  child: Image.asset(
-                'images/${trip!.img}',
-                height: 360,
-                fit: BoxFit.cover,
-                alignment: Alignment.topCenter,
+                  child: Hero(
+                tag: 'location-img${trip!.img}',
+                child: Image.asset(
+                  'images/${trip!.img}',
+                  height: 360,
+                  fit: BoxFit.cover,
+                  alignment: Alignment.topCenter,
+                ),
               )),
               SizedBox(height: 30),
               ListTile(
@@ -40,8 +43,7 @@ class Details extends StatelessWidget {
                   trailing: Heart()),
               Padding(
                   padding: EdgeInsets.all(18),
-                  child: Text(
-                    'cxcxc',
+                  child: Text('cxcxc',
                       // lipsum.createText(numParagraphs: 1, numSentences: 3),
                       style: TextStyle(color: Colors.grey[600], height: 1.4))),
             ],
