@@ -41,7 +41,8 @@ class Details extends StatelessWidget {
               Padding(
                   padding: EdgeInsets.all(18),
                   child: Text(
-                      lipsum.createText(numParagraphs: 1, numSentences: 3),
+                    'cxcxc',
+                      // lipsum.createText(numParagraphs: 1, numSentences: 3),
                       style: TextStyle(color: Colors.grey[600], height: 1.4))),
             ],
           ),
